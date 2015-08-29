@@ -10,18 +10,11 @@ ruleFile.close()
 def normalize(line):
 
 	for rule in rules:
-		rule = rule.split('\t')
+		rule = rule.strip().split('\t')
 		
 		if ( '#' or "" ) in rule[0] or len(rule) < 2 :
 			continue
-#		print rule
-#		print list(line)
-		#print rule[0], rule[1]	
-		#line = line.replace(rule[0],rule[1])
 		line = re.sub(rule[0].decode('utf-8'),rule[1].decode('utf-8'),line,)
-#		print list(line)
-#		line = line.replace(rule[0],rule[1])
-#		print list(line)
 
 	
 	return line
