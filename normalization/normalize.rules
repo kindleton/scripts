@@ -4,11 +4,6 @@
 ी़	़ी		# nukta and matra incorrect rendering and ordering
 ि़	़ि
 ़्	़्
-ी॒	॒ी		# Sindhi implosive and matra incorrect rendering and ordering
-ि॒	॒॒ि
-ा॒॒	॒॒ा
-ु॒॒	॒॒ु
-ू॒॒	॒॒ू
 ड़	ड़		#matching decomposite nukta+D and replacing composite unicode
 #क़	क़
 ख़	ख़
@@ -26,5 +21,7 @@
 ड॒	ॾ
 ब॒	ॿ
 ग॒	ॻ	
+‘‘	"
+‘	"
 [ ]{2,}	 	#matching 2 or more spaces (not tabs), replacing them to single space.
 [ ]{1,}$		#trailing space removal
