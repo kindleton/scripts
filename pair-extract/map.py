@@ -36,6 +36,6 @@ for pair in pair_file:
 	hin_modified = modify_to_snd(hin,mappings)
 	dist = norm_dist(hin_modified,snd)
 
-#	print dist, hin.encode('utf-8'), hin_modified.encode('utf-8'), snd.encode('utf-8')
+	print dist, hin.encode('utf-8'), hin_modified.encode('utf-8'), snd.encode('utf-8')
 	print str(dist)+'\t'+hin.encode('utf-8')+'\t\t'+snd.encode('utf-8')
 #print mappings
