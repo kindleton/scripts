@@ -14,9 +14,9 @@ map_file = open(sys.argv[1],'r+')
 mappings = defaultdict()
 
 for line in map_file:
-	line = line.decode('utf-8').split()
+	line = line.decode('utf-8').split('\t')
 	#assuming col1 = ARB and col2=DEV
-	mappings[line[1]] = line[0]
+	mappings[line[1].strip()] = line[0]
 map_file.close()
 
 #print line[1] , mappings[line[1]]
@@ -38,4 +38,4 @@ for pair in pair_file:
 
 #	print dist, hin.encode('utf-8'), hin_modified.encode('utf-8'), snd.encode('utf-8')
 	print str(dist)+'\t'+hin.encode('utf-8')+'\t\t'+snd.encode('utf-8')
-
+#print mappings
